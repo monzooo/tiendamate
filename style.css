@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
+
+
+
+@keyframes circle-in-bottom-right {
+    from {
+      clip-path: circle(0%);
+    }
+    to {
+      clip-path: circle(150% at bottom right);
+    }
+  }
+  
+  [transition-style="in:circle:bottom-right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-bottom-right both;
+  }
+  
+  [transition-style="out:circle:center"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-center both;
+  }
+  /* Estilos para la galería de Mates y Termos */
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6c7400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+}
+
+/* Estilos para las imágenes de la galería */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #7f00c9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para el efecto de zoom al pasar el mouse sobre las imágenes de la galería */
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el Catálogo de Mate, Termos y Yerbas */
+.catalogo-container {
+    max-width: 350px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #6c7400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; 
+}
+/* Estilos para los contenedores de productos en el catálogo */
+.producto {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin: 20px; 
+}
+/* Estilos para los productos en el catálogo */
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para las imágenes de productos en el catálogo */
+
+
+/* Estilos para los títulos de productos en el catálogo */
+.producto h2 {
+    font-size: 18px; /* Ajusta el tamaño de fuente del título según tus preferencias */
+    margin: 10px 0;
+    color: #333; /* Color del texto del título */
+}
+
+
+/* Estilos para las descripciones de productos en el catálogo */
+.producto p {
+    font-size: 16px; /* Ajusta el tamaño de fuente del texto de la descripción según tus preferencias */
+    color: #555; /* Color del texto de la descripción */
+}
+
+button {
+    font-size: 18px; 
+    padding: 10px 20px; 
+    font-family: Arial, sans-serif; 
+}
+button:hover {
+    background-color: #3e942d; 
+}
+.boton-comprar {
+    background-color: #8a7b2a;
+    color: #fff;
+}
+
+.boton-vender {
+    background-color: #8a7b2a;
+    color: #fff;
+}
+.boton-instagram {
+    background-color: #8a7b2a;
+    color: #fff;
+}
+.boton-facebook {
+    background-color: #8a7b2a;
+    color: #fff;
+}
+.boton-Continue {
+    background-color: #8a7b2a;
+    color: #fff;
+}
+.boton-CargarDatos {
+    background-color: #8a7b2a;
+    color: #fff;
+}
+
+h1 {
+    color: rgb(134, 92, 0);
+  }
+  
+  p {
+    color: rgb(134, 92, 0); 
+  }
+  #lista-carrito {
+    color: rgb(2, 255, 2); 
+  }
+  /* Estilos para las imágenes de productos en el catálogo */
+.producto img {
+    max-width: 100px; 
+    height: auto; 
+    display: inline-block; 
+    margin-right: 10px; 
+  }
+  
+  /* Estilos para la lista de productos en el carrito */
+  #lista-carrito {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  #lista-carrito li {
+    margin-bottom: 10px; 
+  }
+/* Estilos para las imágenes de productos en el catálogo */
+.producto {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-right: 20px; 
+  }
+  
+  /* Estilos para la lista de productos en el carrito */
+  #lista-carrito {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  #lista-carrito li {
+    margin-bottom: 10px; 
+  }
+/* Estilos para el carrito */
+#carrito {
+    display: flex; /* Muestra los productos horizontalmente */
+    flex-wrap: wrap; /* Permite que los productos se ajusten en múltiples líneas si es necesario */
+    max-width: 100%; /* Ajusta el ancho máximo del carrito para que se adapte al tamaño de la pantalla */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6c7400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Permite desplazamiento si el contenido es demasiado largo */
+}
+
+/* Estilos para los productos en el carrito */
+.producto {
+    width: 200px; /* Ajusta el ancho de cada producto en el carrito según tus preferencias */
+    margin: 10px; /* Espacio entre los productos */
+    text-align: center; /* Centra el contenido horizontalmente */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Estilos para las imágenes de productos en el carrito */
+.producto img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según tus preferencias */
+    height: auto; /* Mantiene la proporción de aspecto */
+    margin-bottom: 10px; /* Espacio entre la imagen y el título/descripción */
+}
+
+/* Estilos para los títulos de productos en el carrito */
+.producto h2 {
+    font-size: 16px; /* Ajusta el tamaño de fuente del título según tus preferencias */
+    margin: 10px 0;
+    color: #333; /* Color del texto del título */
+}
+
+/* Estilos para las descripciones de productos en el carrito */
+.producto p {
+    font-size: 14px; /* Ajusta el tamaño de fuente del texto de la descripción según tus preferencias */
+    color: #555; /* Color del texto de la descripción */
+}
+
+#total {
+    font-size: 20px; /* Ajusta el tamaño de fuente del total */
+}
+
+#vaciar-carrito {
+    font-size: 18px; /* Ajusta el tamaño de fuente del botón de vaciar carrito */
+}
+#carrito {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6c7400;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+#carrito h1 {
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+    color: #333; /* Cambia el color del texto si es necesario */
+    margin: 10px 0; /* Espacio entre el título y la lista de productos */
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Ajusta el ancho de la lista */
+}
+
+#lista-carrito li {
+    margin-bottom: 10px;
+    display: flex; /* Muestra los elementos de la lista horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+#lista-carrito li span {
+    flex: 1; /* Hace que el span ocupe todo el espacio disponible horizontalmente */
+}
+
+#total {
+    font-size: 20px;
+    color: #333; /* Cambia el color del texto del total si es necesario */
+    margin-top: 20px; /* Espacio entre la lista y el total */
+}
+
+#vaciar-carrito {
+    font-size: 18px;
+    background-color: #ff5733; /* Cambia el color de fondo del botón de vaciar carrito si es necesario */
+    color: #fff; /* Cambia el color del texto del botón si es necesario */
+    padding: 10px 20px; /* Ajusta el espacio interno del botón */
+    margin-top: 10px; /* Espacio entre el total y el botón de vaciar carrito */
+}
+
+#lista-carrito li button {
+    font-size: 18px; /* Ajusta el tamaño de fuente de los botones de eliminar si es necesario */
+    background-color: #ff5733; /* Cambia el color de fondo de los botones de eliminar si es necesario */
+    color: #fff; /* Cambia el color del texto de los botones de eliminar si es necesario */
+    padding: 5px 10px; /* Ajusta el espacio interno de los botones de eliminar si es necesario */
+    margin-left: 10px; /* Espacio entre los elementos en la lista */
+}

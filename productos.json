@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "nombre": "mate 1",
+      "precio": 15000,
+      "descripcion": "Este es un mate de calabaza."
+    },
+    {
+      "id": 2,
+      "nombre": "termo 2",
+      "precio": 45000,
+      "descripcion": "Este es un termo de acero inoxidable."
+    },
+    {
+      "id": 3,
+      "nombre": "yerba 3",
+      "precio": 3000,
+      "descripcion": "Este es un tipo de yerba sin palo."
+    }
+  ]
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web en preparación</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body style="background-color: tan">
+    <div id="contenido">
+        <p>Mi primera página oficial</p>
+        <h1>Venta de yerbas y mates🧉</h1>
+        <h2>Empresa importante y grande de la industria Argentina</h2>
+        <b>BIENVENIDOS</b>
+        <i>Somos una empresa nueva, que se dedica a la venta de yerbas y mates argentinos, si te interesa contáctate con nosotros.</i>
+        <blockquote>Contactate:</blockquote>
+        <p>📱telefono:351334400</p>
+        <p>🔍facebook: MATESARGENTINA</p>
+        <p>🔍instagram: MATESARGENTINA</p>
+        <div id="resultado"></div>
+
+        <!-- Galería de Mates y Termos -->
+        <div transition-style="in:circle:bottom-right" class="mi-elemento">
+            BIENVENIDOS A MATES ARGENTINA🧉🙌
+            <div class="container">
+                <h1>Galería de Mates y Termos</h1>
+                <div class="gallery">
+                    <img src="imperial.png" alt="Mate 1">
+                    <img src="yerba 1.jpg" alt="Mate 2">
+                    <img src="termo 1.jpg" alt="Termo 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Catálogo de Mate, Termos y Yerbas -->
+        <div class="catalogo-container">
+            <h1>Catálogo de Mate, Termos y Yerbas</h1>
+            <div class="producto">
+                <img src="imperial.png" alt="Mate 1">
+                <h2>Mate de Calabaza</h2>
+                <p>Descripción del mate de calabaza. Precio: $15.000</p>
+                <button class="agregar-carrito" data-nombre="Mate de Calabaza" data-precio="15000">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="termo 1.jpg" alt="Termo 1">
+                <h2>Termo de Acero Inoxidable</h2>
+                <p>Descripción del termo de acero inoxidable. Precio: $45.000</p>
+                <button class="agregar-carrito" data-nombre="Termo de Acero Inoxidable" data-precio="45000">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="yerba 1.jpg" alt="Yerba 1">
+                <h2>Yerba Mate Orgánica</h2>
+                <p>Descripción de la yerba mate orgánica. Precio: $3.000</p>
+                <button class="agregar-carrito" data-nombre="Yerba Mate Orgánica" data-precio="3000">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <div id="carrito">
+            <h1>Resumen de compra</h1>
+            <ul id="lista-carrito"></ul>
+            <p>Total: <span id="total">0</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
