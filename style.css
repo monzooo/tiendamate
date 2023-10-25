@@ -117,21 +117,18 @@ to {background-position: -100px 0px;background-size:2750px;}
     /* max-width: 300px; */
 }
 
-/* Estilos para las imágenes de productos en el catálogo */
-
-
 /* Estilos para los títulos de productos en el catálogo */
 .producto h2 {
-    font-size: 18px; /* Ajusta el tamaño de fuente del título según tus preferencias */
+    font-size: 18px; 
     margin: 10px 0;
-    color: #333; /* Color del texto del título */
+    color: #333; 
 }
 
 
 /* Estilos para las descripciones de productos en el catálogo */
 .producto p {
-    font-size: 16px; /* Ajusta el tamaño de fuente del texto de la descripción según tus preferencias */
-    color: #555; /* Color del texto de la descripción */
+    font-size: 16px; 
+    color: #555; 
 }
 
 button {
@@ -213,21 +210,21 @@ h1 {
   }
 /* Estilos para el carrito */
 #carrito {
-    display: flex; /* Muestra los productos horizontalmente */
-    flex-wrap: wrap; /* Permite que los productos se ajusten en múltiples líneas si es necesario */
-    max-width: 100%; /* Ajusta el ancho máximo del carrito para que se adapte al tamaño de la pantalla */
+    display: flex; 
+    flex-wrap: wrap; 
+    max-width: 100%; 
     margin: 20px auto;
     padding: 10px;
     background-color: #6c7400;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: auto; /* Permite desplazamiento si el contenido es demasiado largo */
+    overflow: auto; 
 }
 
 /* Estilos para los productos en el carrito */
 .producto {
-    width: 200px; /* Ajusta el ancho de cada producto en el carrito según tus preferencias */
-    margin: 10px; /* Espacio entre los productos */
-    text-align: center; /* Centra el contenido horizontalmente */
+    width: 200px; 
+    margin: 10px; 
+    text-align: center; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     padding: 10px;
@@ -235,30 +232,30 @@ h1 {
 
 /* Estilos para las imágenes de productos en el carrito */
 .producto img {
-    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según tus preferencias */
-    height: auto; /* Mantiene la proporción de aspecto */
-    margin-bottom: 10px; /* Espacio entre la imagen y el título/descripción */
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 /* Estilos para los títulos de productos en el carrito */
 .producto h2 {
-    font-size: 16px; /* Ajusta el tamaño de fuente del título según tus preferencias */
+    font-size: 16px; 
     margin: 10px 0;
-    color: #333; /* Color del texto del título */
+    color: #333; 
 }
 
 /* Estilos para las descripciones de productos en el carrito */
 .producto p {
-    font-size: 14px; /* Ajusta el tamaño de fuente del texto de la descripción según tus preferencias */
-    color: #555; /* Color del texto de la descripción */
+    font-size: 14px; 
+    color: #555; 
 }
 
 #total {
-    font-size: 20px; /* Ajusta el tamaño de fuente del total */
+    font-size: 20px; 
 }
 
 #vaciar-carrito {
-    font-size: 18px; /* Ajusta el tamaño de fuente del botón de vaciar carrito */
+    font-size: 18px; 
 }
 #carrito {
     display: flex;
@@ -272,47 +269,47 @@ h1 {
 }
 
 #carrito h1 {
-    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
-    color: #333; /* Cambia el color del texto si es necesario */
-    margin: 10px 0; /* Espacio entre el título y la lista de productos */
+    font-size: 24px; 
+    color: #333; 
+    margin: 10px 0; 
 }
 
 #lista-carrito {
     list-style: none;
     padding: 0;
-    width: 100%; /* Ajusta el ancho de la lista */
+    width: 100%; 
 }
 
 #lista-carrito li {
     margin-bottom: 10px;
-    display: flex; /* Muestra los elementos de la lista horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex; 
+    align-items: center; 
 }
 
 #lista-carrito li span {
-    flex: 1; /* Hace que el span ocupe todo el espacio disponible horizontalmente */
+    flex: 1; 
 }
 
 #total {
     font-size: 20px;
-    color: #333; /* Cambia el color del texto del total si es necesario */
-    margin-top: 20px; /* Espacio entre la lista y el total */
+    color: #333; 
+    margin-top: 20px; 
 }
 
 #vaciar-carrito {
     font-size: 18px;
-    background-color: #ff5733; /* Cambia el color de fondo del botón de vaciar carrito si es necesario */
-    color: #fff; /* Cambia el color del texto del botón si es necesario */
-    padding: 10px 20px; /* Ajusta el espacio interno del botón */
-    margin-top: 10px; /* Espacio entre el total y el botón de vaciar carrito */
+    background-color: #ff5733; 
+    color: #fff; 
+    padding: 10px 20px; 
+    margin-top: 10px; 
 }
 
 #lista-carrito li button {
-    font-size: 18px; /* Ajusta el tamaño de fuente de los botones de eliminar si es necesario */
-    background-color: #ff5733; /* Cambia el color de fondo de los botones de eliminar si es necesario */
-    color: #fff; /* Cambia el color del texto de los botones de eliminar si es necesario */
-    padding: 5px 10px; /* Ajusta el espacio interno de los botones de eliminar si es necesario */
-    margin-left: 10px; /* Espacio entre los elementos en la lista */
+    font-size: 18px; 
+    background-color: #ff5733; 
+    color: #fff; 
+    padding: 5px 10px; 
+    margin-left: 10px; 
 }
 
 
