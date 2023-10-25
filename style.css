@@ -28,47 +28,25 @@ to {background-position: -100px 0px;background-size:2750px;}
 }
 
 
-
-.center
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(75, 75, 250, 0.3);
-  border-radius: 3px;
-}
-.center h1{
-  text-align:center;
-  color:white;
-  font-family: 'Source Code Pro', monospace;
-  text-transform:uppercase;
-}
-
-
-
 @keyframes circle-in-bottom-right {
     from {
-      clip-path: circle(0%);
+        clip-path: circle(0%);
     }
+
     to {
-      clip-path: circle(150% at bottom right);
+        clip-path: circle(150% at bottom right); 
     }
-  }
-  
-  [transition-style="in:circle:bottom-right"] {
+}
+
+[transition-style="in:circle:bottom-right"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-bottom-right both;
-  }
-  
-  [transition-style="out:circle:center"] {
+}
+
+[transition-style="out:circle:center"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-out-center both;
-  }
-  /* Estilos para la galería de Mates y Termos */
+}
+
+/* Estilos para la galería de Mates y Termos */
 .gallery-container {
     max-width: 800px;
     margin: 0 auto;
@@ -101,12 +79,23 @@ to {background-position: -100px 0px;background-size:2750px;}
 
 /* Estilos para el Catálogo de Mate, Termos y Yerbas */
 .catalogo-container {
-    max-width: 350px;
+    width: 500px;
     margin: 20px auto; 
     padding: 20px;
     background-color: #6c7400;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: auto; 
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogo-title {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Estilos para los contenedores de productos en el catálogo */
 .producto {
@@ -114,7 +103,8 @@ to {background-position: -100px 0px;background-size:2750px;}
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
-    margin: 20px; 
+    margin: 20px;
+    width: 300px;
 }
 /* Estilos para los productos en el catálogo */
 .producto {
@@ -124,6 +114,7 @@ to {background-position: -100px 0px;background-size:2750px;}
     background-color: #fff;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* max-width: 300px; */
 }
 
 /* Estilos para las imágenes de productos en el catálogo */
@@ -322,4 +313,21 @@ h1 {
     color: #fff; /* Cambia el color del texto de los botones de eliminar si es necesario */
     padding: 5px 10px; /* Ajusta el espacio interno de los botones de eliminar si es necesario */
     margin-left: 10px; /* Espacio entre los elementos en la lista */
+}
+
+
+
+
+
+
+/* Prueba */
+.header-container {
+    padding: 0.5rem;
+    padding-top: 0;
+    margin-bottom: 2rem;
+    background-color: #e5dcdc;
+    border-radius: 15px;
+    box-shadow: 9px 11px 13px 1px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 9px 11px 13px 1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 9px 11px 13px 1px rgba(0,0,0,0.76);
 }

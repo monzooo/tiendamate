@@ -1,21 +1,23 @@
 [
-    {
-      "id": 1,
-      "nombre": "mate 1",
-      "precio": 15000,
-      "descripcion": "Este es un mate de calabaza."
-    },
-    {
-      "id": 2,
-      "nombre": "termo 2",
-      "precio": 45000,
-      "descripcion": "Este es un termo de acero inoxidable."
-    },
-    {
-      "id": 3,
-      "nombre": "yerba 3",
-      "precio": 3000,
-      "descripcion": "Este es un tipo de yerba sin palo."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "nombre": "Mate 1",
+    "precio": 15000,
+    "descripcion": "Este es un mate de calabaza.",
+    "imagen": "./imperial.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Termo 2",
+    "precio": 45000,
+    "descripcion": "Este es un termo de acero inoxidable.",
+    "imagen": "./termo 1.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Yerba 3",
+    "precio": 3000,
+    "descripcion": "Este es un tipo de yerba sin palo.",
+    "imagen": "./yerba 1.jpg"
+  }
+]
